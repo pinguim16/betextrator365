@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Betting Data Extractor 365",
+  "description": "A Chrome plugin for extracting betting data from Bet365 and exporting it to a CSV file.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.bet365.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://*.bet365.com/*"
+  ]
+}
