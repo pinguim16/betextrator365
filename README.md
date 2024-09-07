@@ -43,7 +43,7 @@ O arquivo CSV gerado contém as seguintes colunas:
 
 1. Clone este repositório em sua máquina local:
    ```bash
-   git clone https://github.com/pinguim16/betextractorrivalry  ```
+   git clone https://github.com/pinguim16/betextrator365  ```
    
 2. Abra o Chrome e vá para chrome://extensions/.
 
